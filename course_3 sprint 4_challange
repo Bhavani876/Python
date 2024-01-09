@@ -1,0 +1,166 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "id": "oy5_qZt3MpJW"
+   },
+   "source": [
+    "# TASK1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "EUy44515MpJg",
+    "outputId": "49303b86-b9df-48b5-9e3b-ea6b357e8904"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "1. Who developed Python Programming Language?\n",
+      "a) Wick van Rossum\n",
+      "b) Rasmus Lerdorf\n",
+      "c) Guido van Rossum\n",
+      "d) Niene Stom\n",
+      "wrong answer\n",
+      "\n",
+      "2. Which type of Programming does Python support?\n",
+      "a) object-oriented programming\n",
+      "b) structured programming\n",
+      "c) functional programming\n",
+      "d) all of the mentioned\n",
+      "wrong answer\n",
+      "\n",
+      "3. Is Python case sensitive when dealing with identifiers?\n",
+      "a) no\n",
+      "b) yes\n",
+      "c) machine dependent\n",
+      "d) none of the mentioned\n",
+      "right answer\n",
+      "\n",
+      "4. Which of the following is the correct extension of the Python file?\n",
+      "a) .python\n",
+      "b) .pl\n",
+      "c) .py\n",
+      "d) .p\n",
+      "wrong answer\n",
+      "\n",
+      "5. Is Python code compiled or interpreted?\n",
+      "a) Python code is both compiled and interpreted\n",
+      "b) Python code is neither compiled nor interpreted\n",
+      "c) Python code is only compiled\n",
+      "d) Python code is only interpreted\n",
+      "wrong answer\n",
+      "\n",
+      "6. All keywords in Python are in _________\n",
+      "a) Capitalized\n",
+      "b) lower case\n",
+      "c) UPPER CASE\n",
+      "d) None of the mentioned\n",
+      "wrong answer\n",
+      "\n",
+      "7. What will be the value of the following Python expression?\n",
+      "a) 7\n",
+      "b) 2\n",
+      "c) 4\n",
+      "d) 1\n",
+      "right answer\n",
+      "\n",
+      "8. Which of the following is used to define a block of code in Python language?\n",
+      "a) Indentation\n",
+      "b) Key\n",
+      "c) Brackets\n",
+      "d) All of the mentioned\n",
+      "right answer\n",
+      "\n",
+      "9. Which keyword is used for function in Python language?\n",
+      "a) Function\n",
+      "b) Def\n",
+      "c) Fun\n",
+      "d) Define\n",
+      "wrong answer\n",
+      "\n",
+      "10. Which of the following character is used to give single-line comments in Python?\n",
+      "a) //\n",
+      "b) #\n",
+      "c) !\n",
+      "d) /*\n",
+      "wrong answer\n",
+      "your total percentage is 30.0\n",
+      "you have failed the test, please try to study harder\n"
+     ]
+    }
+   ],
+   "source": [
+    "question=['1. Who developed Python Programming Language?\\na) Wick van Rossum\\nb) Rasmus Lerdorf\\nc) Guido van Rossum\\nd) Niene Stom',\n",
+    "'2. Which type of Programming does Python support?\\na) object-oriented programming\\nb) structured programming\\nc) functional programming\\nd) all of the mentioned',\n",
+    "'3. Is Python case sensitive when dealing with identifiers?\\na) no\\nb) yes\\nc) machine dependent\\nd) none of the mentioned',\n",
+    "'4. Which of the following is the correct extension of the Python file?\\na) .python\\nb) .pl\\nc) .py\\nd) .p',\n",
+    "'5. Is Python code compiled or interpreted?\\na) Python code is both compiled and interpreted\\nb) Python code is neither compiled nor interpreted\\nc) Python code is only compiled\\nd) Python code is only interpreted',\n",
+    "'6. All keywords in Python are in _________\\na) Capitalized\\nb) lower case\\nc) UPPER CASE\\nd) None of the mentioned',\n",
+    "'7. What will be the value of the following Python expression?\\na) 7\\nb) 2\\nc) 4\\nd) 1',\n",
+    "'8. Which of the following is used to define a block of code in Python language?\\na) Indentation\\nb) Key\\nc) Brackets\\nd) All of the mentioned',\n",
+    "'9. Which keyword is used for function in Python language?\\na) Function\\nb) Def\\nc) Fun\\nd) Define',\n",
+    "'10. Which of the following character is used to give single-line comments in Python?\\na) //\\nb) #\\nc) !\\nd) /*']\n",
+    "answers=['c','d','a','c','b','d','a','a','b','b']\n",
+    "\n",
+    "\n",
+    "i=0\n",
+    "correct_answers=0\n",
+    "while i in range(0,10):\n",
+    "    print(f'\\n{question[i]}')\n",
+    "    x=input('please enter your option').lower()\n",
+    "    if x==answers[i]:\n",
+    "        print('right answer')\n",
+    "        correct_answers+=1\n",
+    "        i+=1\n",
+    "    else:\n",
+    "        print('wrong answer')\n",
+    "        i+=1\n",
+    "\n",
+    "y=(correct_answers/10)*100\n",
+    "print(f'your total percentage is {y}')\n",
+    "if y>=80:\n",
+    "    print('excelent work keep it up')\n",
+    "elif y>=50 and y<80:\n",
+    "    print('good work but you could do better')\n",
+    "else:\n",
+    "    print('you have failed the test, please try to study harder')"
+   ]
+  }
+ ],
+ "metadata": {
+  "colab": {
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  },
+  "vscode": {
+   "interpreter": {
+    "hash": "9bd46529bef2225f3eee2303d757fca04f99d9a5bbc8934b5285c9ad48859bb4"
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
